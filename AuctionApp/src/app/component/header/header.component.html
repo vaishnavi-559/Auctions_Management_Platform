@@ -1,6 +1,6 @@
 <header class="navbar navbar-expand-lg navbar-light bg-light border-bottom rounded">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" routerLink="/" routerLinkActive="active">
       <img src="/assets/mazadlogo.png" alt="Admin Logo" height="40" class="d-inline-block align-top rounded">
     </a>
 
@@ -10,20 +10,20 @@
           <i class="bi bi-plus-lg"></i> Add
         </button>
         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="addDropdown" ngbDropdownMenu>
-          <button class="dropdown-item  btn-outline-secondary" type="button" routerLink="/newUser" routerLinkActive="active">New Asset
+          <button class="dropdown-item  btn-outline-secondary" type="button" routerLink="/home/newUser" routerLinkActive="active">New Asset
           </button>
-          <button class="dropdown-item  btn-outline-secondary" type="button" routerLink="/newAuction" routerLinkActive="active">New Auction
+          <button class="dropdown-item  btn-outline-secondary" type="button" routerLink="/home/newAuction" routerLinkActive="active">New Auction
           </button>
-          <button class="dropdown-item  btn-outline-secondary" type="button" routerLink="/newAsset" routerLinkActive="active">New Auction
+          <button class="dropdown-item  btn-outline-secondary" type="button" routerLink="/home/newAsset" routerLinkActive="active">New Auction
           </button>
         </div>
       </div>
 
-      <button class="btn btn-outline-secondary rounded-circle me-2" type="button" routerLink="/settings" routerLinkActive="active">
+      <button class="btn btn-outline-secondary rounded-circle me-2" type="button" routerLink="/home/settings" routerLinkActive="active">
         <i class="bi bi-gear"></i>
       </button>
 
-      <button class="btn btn-outline-dark rounded-pill" type="button"routerLink="/login" routerLinkActive="active">
+      <button class="btn btn-outline-dark rounded-pill" type="button"routerLink="/" routerLinkActive="active">
         <i class="bi bi-person-circle me-1" ></i>Login
       </button>
     </div>

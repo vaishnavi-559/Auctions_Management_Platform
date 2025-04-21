@@ -3,14 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./component/header/header.component";
 import { FooterComponent } from "./component/footer/footer.component";
 import { SidebarComponent } from "./component/sidebar/sidebar.component";
-import { ManageAssetComponent } from './component/manage-asset/manage-asset.component';
-import { ManageAuctionComponent } from './component/manage-auction/manage-auction.component';
-import { ManageUserComponent } from './component/manage-user/manage-user.component';
+import { HomeComponent } from "./component/home/home.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, SidebarComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, SidebarComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

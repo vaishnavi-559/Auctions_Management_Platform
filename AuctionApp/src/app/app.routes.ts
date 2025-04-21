@@ -9,16 +9,16 @@ import { SettingsComponent } from './component/settings/settings.component';
 import { AddUserComponent } from './component/add-user/add-user.component';
 import { AddAuctionComponent } from './component/add-auction/add-auction.component';
 import { AddAssetComponent } from './component/add-asset/add-asset.component';
+import { HomeComponent } from './component/home/home.component';
 
 export const routes: Routes = [
-    {path:'', component:DashboardComponent},
-    {path:'assets', component:ManageAssetComponent},
+    {path:'', component:LoginComponent},
+    {path:'home', component:HomeComponent,children:[ {path:'assets', component:ManageAssetComponent},
     {path:'auctions', component:ManageAuctionComponent},
+    {path:'dashboard', component:DashboardComponent},
     {path:'users', component:ManageUserComponent},
-    {path:'login', component:LoginComponent},
     {path:'settings', component:SettingsComponent},
     {path:'newUser', component:AddUserComponent},
     {path:'newAuction', component:AddAuctionComponent},
-    {path:'newAsset', component:AddAssetComponent},
-
+    {path:'newAsset', component:AddAssetComponent},]},
 ];
