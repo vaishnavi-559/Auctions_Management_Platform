@@ -20,7 +20,8 @@ namespace AuctionManagementSystem.Api
             {
                 app.MapOpenApi();
             }
-
+            app.UseDefaultFiles(); 
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

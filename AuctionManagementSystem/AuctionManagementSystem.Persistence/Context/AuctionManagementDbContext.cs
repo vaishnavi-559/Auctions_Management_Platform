@@ -8,5 +8,6 @@ namespace AuctionManagementSystem.Persistence.Context
 {
     public class AuctionManagementDbContext
     {
+
     }
 }
