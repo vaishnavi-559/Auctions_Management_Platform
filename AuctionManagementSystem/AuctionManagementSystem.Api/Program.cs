@@ -1,3 +1,6 @@
+using AuctionManagementSystem.Persistence;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AuctionManagementSystem.Api
 {
@@ -10,6 +13,8 @@ namespace AuctionManagementSystem.Api
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            //builder.Services.AddPersistanceServices(builder.Services, builder.Configuration);
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
